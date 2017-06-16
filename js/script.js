@@ -4,6 +4,12 @@ $(document).ready(function(){
         $('.js--line-1').addClass("animated rollIn");
         $('.js--h-1').addClass("animated zoomIn");
         $('.js--latest-products').addClass("animated fadeIn");
+        if(direction=='down'){
+                $('nav').addClass("sticky");
+        }
+        else{
+                $('nav').removeClass("sticky");
+        }
     }, {
         offset: '50%'
     });
@@ -37,4 +43,21 @@ $(document).ready(function(){
     }, {
         offset: '0%'
     });
+    
+    $(".fakeloader").fakeLoader({
+        timeToHide:1200, 
+
+    // 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+    spinner:"spinner5",
+    bgColor:"rgb(149, 6, 38)", //2ecc71
+    // Custom loading GIF.
+    //imagePath:"yourPath/customizedImage.gif" 
+
+    });
+    
+    setTimeout(function(){
+        $('.heroin-text').addClass("animated bounceIn");
+    },1300)
+    
+    
 });
