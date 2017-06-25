@@ -32,11 +32,11 @@ a{
     background: linear-gradient(to bottom, #1d1d1d, #101010);
     z-index: 900;
     position: fixed;
-/*    display: none;*/
 }
 #svg-img{
     width: 50%;
     margin: 200px auto;
+    display: none;
 }
 svg{
     width: 100%;

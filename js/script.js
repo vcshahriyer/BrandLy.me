@@ -1,6 +1,15 @@
 $(document).ready(function(){
     
-    
+//  ======  MY custom preloader ============//
+    var svg = new Walkway({
+        selector:"#Layer_1",
+        duration: 4000,
+        easing: 'easeInOutCubic'
+    }).draw();
+
+    $('#svg-img').fadeIn(100);
+    $('#my-div').delay(4000).fadeOut(500);
+    //  ======  waypoint animation ============//
     
     $('.js--wp--1').waypoint(function(direction) {
         $('.js--line-1').addClass("animated rollIn");
@@ -64,12 +73,6 @@ $(document).ready(function(){
         }        
     });
     
-            //  ======  MY custom preloader ============//
-    var svg = new Walkway({
-        selector:"#Layer_1",
-        duration: 4000,
-        easing: 'easeInOutCubic'
-    }).draw();
     
-    $('#my-div').delay(4000).fadeOut(500);
+    
 });
