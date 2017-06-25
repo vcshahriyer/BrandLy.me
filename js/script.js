@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+    
+    
     $('.js--wp--1').waypoint(function(direction) {
         $('.js--line-1').addClass("animated rollIn");
         $('.js--h-1').addClass("animated zoomIn");
@@ -44,20 +46,30 @@ $(document).ready(function(){
         offset: '0%'
     });
     
-    $(".fakeloader").fakeLoader({
-        timeToHide:1200, 
-
-    // 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-    spinner:"spinner5",
-    bgColor:"rgb(149, 6, 38)", //2ecc71
-    // Custom loading GIF.
-    //imagePath:"yourPath/customizedImage.gif" 
-
+    
+//  ======  mobele navigation section============//
+    
+        $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(400);
+        
+        if (icon.hasClass('ion-ios-more')) {
+            icon.addClass('ion-close-circled');
+            icon.removeClass('ion-ios-more');
+        } else {
+            icon.addClass('ion-ios-more');
+            icon.removeClass('ion-close-circled');
+        }        
     });
     
-    setTimeout(function(){
-        $('.heroin-text').addClass("animated bounceIn");
-    },1300)
+            //  ======  MY custom preloader ============//
+    var svg = new Walkway({
+        selector:"#Layer_1",
+        duration: 4000,
+        easing: 'easeInOutCubic'
+    }).draw();
     
-    
+    $('#my-div').delay(4000).fadeOut(500);
 });

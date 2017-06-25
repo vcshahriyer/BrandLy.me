@@ -19,12 +19,43 @@ a{
     color: #fff;
     font-family: "Lato";
 }
+
+/*================================================
+                    Loader
+  ================================================*/
+
+#my-div{
+    width: 100%;
+    height: 100vh;
+    background: #545454; 
+    background: -webkit-linear-gradient(to bottom, #545454, #545454);
+    background: linear-gradient(to bottom, #1d1d1d, #101010);
+    z-index: 900;
+    position: fixed;
+/*    display: none;*/
+}
+#svg-img{
+    width: 50%;
+    margin: 200px auto;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+path,line,polyline{
+    stroke: #dc0000;
+    stroke-width: 2px;
+}
+path{
+    fill: transparent;
+}
+
 .main-nav{
     float: right;
     list-style-type: none;
     margin-top: 30px;
     margin-right: 50px;
-    z-index: 9999;
+    z-index: 299;
 }
 .main-nav li{
     display: inline-block;
@@ -36,16 +67,31 @@ a{
     color: #dc0000;
     transition: color .5s;
 }
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 220%;  /* read   #dc0000  */
+    color: rgb(165, 19, 19);
+    display: block;
+    float: right;
+}
 .sticky{
     width: 100%;
     background-color: #000;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: fixed;
-    z-index: 9999;
+    z-index: 199;
+    -webkit-animation-delay: .1s;
     animation-delay: .1s;
-    transition: all .3s ease;
+    transition: padding .3s ease;
+    top: 0;
 }
-.heading{
+header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/heading-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -72,9 +118,8 @@ a{
 }
 .heroin-text h1{
     font-size: 50px;
-    font-family: 
 }
-#btn-sn{margin-bottom: 40px}
+#btn-sn{margin-bottom: 40px}                  /* read   #dc0000  */
 .btn{ 
     border:1px solid;
     padding: 5px 9px;
@@ -88,6 +133,7 @@ a{
     position: absolute;
     top: 97%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .dot li{
@@ -115,7 +161,9 @@ h2{
     margin: 0 auto;
     text-align: center;
     padding: 10px 0;
+    -webkit-animation-delay: .4s;
     animation-delay: .4s;
+    -webkit-animation-duration: 1s !important;
     animation-duration: 1s !important;
     opacity: 0;
 }
@@ -127,19 +175,22 @@ h2{
     background-color: #dc0000;
     content: " ";
     margin: 0 auto;
+    -webkit-animation-duration: 1s !important;            /* read   #dc0000  */
     animation-duration: 1s !important;
     opacity: 0;
 }
 .top{
     margin-top: 30px;
+    -webkit-animation-delay: .1s;
     animation-delay: .1s;
 }
 .bottom{
     margin-bottom: 18px;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
 }
-.js--latest-products{animation-delay: .5s; opacity: 0}
-.js--left,.js--right{animation-delay: .7s; opacity: 0;}
+.js--latest-products{-webkit-animation-delay: .5s;animation-delay: .5s; opacity: 0}
+.js--left,.js--right{-webkit-animation-delay: .7s;animation-delay: .7s; opacity: 0;}
 .col{
     position: relative;
     overflow: hidden;
@@ -147,6 +198,7 @@ h2{
 .col img{
     width: 100%;
     height: 100%;
+    display: -webkit-box;
     display: flex;
     transition: all .2s;
 }
@@ -165,7 +217,7 @@ h2{
     height: 80%;
     width: 80%;
     margin: 40px 35px;
-    transition: all .2s ease;
+    transition: all .2s ease;            /* read   #dc0000  */
     z-index: 2;
 }
 .inner-border h3{
@@ -175,9 +227,11 @@ h2{
     font-size: 30px
 }
 .hvr:hover img{
+    -webkit-transform: scale(1.2,1.2);
     transform: scale(1.2,1.2);
 }
 .col:hover .inner-border{
+    -webkit-transform: scale(1.2,1.2);
     transform: scale(1.2,1.2);
     z-index: 100;
 }
@@ -198,9 +252,10 @@ h2{
     height: 1px;
     width: 180px;
     background: #ffffff;
-    margin: 10px auto
+    margin: 10px auto;
 }
 .col:hover .inner-text{
+    -webkit-transform: scale(1.2,1.2);
     transform: scale(1.2,1.2);
 }
 
@@ -210,7 +265,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.js--trending{animation-delay: .7s; opacity: 0}
+.js--trending{-webkit-animation-delay: .7s;animation-delay: .7s; opacity: 0}
 #branding-item{
     max-height: 450px;
     max-width: 450px;
@@ -224,7 +279,7 @@ h2{
 }
 .item-right h3,
 .blog h3{
-    color: #dc0000;
+   color: #dc0000;         /* read   #dc0000  */
     margin: 20px 0;
 }
 .item-text,
@@ -269,8 +324,9 @@ h2{
     transition: all .2s ease;
 }
 #itemDot{
-    width: 200px;
-    margin: 10px 515px;
+    width: 75px;
+    margin: 15px auto;
+    display: -webkit-box;
     display: flex
 }
 .newsletter{
@@ -323,7 +379,7 @@ footer i{
     font-size: 25px;
     color: #dc0000;
 }
-.js--heart{animation-delay: .8s}
+.js--heart{-webkit-animation-delay: .8s;animation-delay: .8s}
 
 
 
