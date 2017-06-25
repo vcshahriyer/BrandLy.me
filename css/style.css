@@ -49,7 +49,7 @@ path,line,polyline{
 path{
     fill: transparent;
 }
-
+nav{background-color: rgba(0, 0, 0, 0.29)}
 .main-nav{
     float: right;
     list-style-type: none;
@@ -63,6 +63,8 @@ path{
     list-style-type: none;
     padding: 2px 10px;
 }
+.main-nav li a{font-size: 20px}
+.navactive{color: #dc0000;}
 .main-nav li:hover a{
     color: #dc0000;
     transition: color .5s;
@@ -104,8 +106,10 @@ header{
     
 }
 .logo{
-    margin-top: 20px;
-    margin-left: 220px
+    margin-left: 150px;
+    max-height: 85px;
+    max-width: 230px;
+    display: inline-block;
 }
 .heroin-text p {
     font-size:150%;
