@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 768px){
     .row{padding: 0px 20px}
     .main-nav{display: none}
@@ -21,4 +22,12 @@
     }
     .subscribe{margin-top: 90px}
     .item-right{padding-left: 15px}
+}
+
+@media only screen and (max-width: 480px){
+    .logo{margin: 0}
+    .mobile-nav-icon{margin-top: 20px;}
+    .col{margin-bottom: 10px}
+    .subscribe{margin-top: 65px;}
+    .subscribe h3{text-align: center;line-height: 1.5}
 }
