@@ -118,10 +118,10 @@ header{
 .heroin-text{
     color: #fff;
     text-align: center;
-    margin-top: 175px
+    margin-top: 12%
 }
 .heroin-text h1{
-    font-size: 50px;
+    font-size: 250%;
 }
 #btn-sn{margin-bottom: 40px}                  /* read   #dc0000  */
 .btn{ 
