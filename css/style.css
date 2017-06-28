@@ -82,6 +82,7 @@ nav{background-color: rgba(0, 0, 0, 0.29)}
     display: block;
     float: right;
 }
+.mobile-nav a{font-weight: 400 !important}
 .sticky{
     width: 100%;
     background-color: #000;

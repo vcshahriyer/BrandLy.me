@@ -12,19 +12,23 @@
 @media only screen and (max-width: 768px){
     .row{padding: 0px 20px}
     .main-nav{display: none}
+    .main-nav li{
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+    }
+    .main-nav{
+        position: fixed;
+        right: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: rgba(3, 6, 38, 0.42);
+    }
     .logo{
         margin-left: 40%;
         margin-top: 0px;
     }
-    .main-nav{
-        margin-top: 40px;
-    }
     .heading{position: relative}
-    .main-nav li{
-        display: block;
-        margin-bottom: 10px;
-    }
-    .main-nav li a{font-weight: 300}
     .mobile-nav-icon{display: block}
     .sub-btn{
         margin-left: 10px !important;

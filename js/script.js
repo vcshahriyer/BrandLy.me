@@ -1,21 +1,23 @@
-$(document).ready(function(){
+$(document).ready(function () {
     
-//  ======  MY custom preloader ============//
+//    MY custom preloader //
+
     var svg = new Walkway({
-        selector:"#Layer_1",
+        selector: "#Layer_1",
         duration: 4000,
         easing: 'easeInOutCubic'
     }).draw();
 
     $('#svg-img').fadeIn(100);
     $('#my-div').delay(4000).fadeOut(500);
-    //  ======  waypoint animation ============//
+
+    //    waypoint animation //
     
-    $('.js--wp--1').waypoint(function(direction) {
+    $('.js--wp--1').waypoint(function (direction) {
         $('.js--line-1').addClass("animated rollIn");
         $('.js--h-1').addClass("animated zoomIn");
         $('.js--latest-products').addClass("animated fadeIn");
-        if(direction=='down'){
+        if (direction == 'down'){
                 $('nav').addClass("sticky");
         }
         else{
@@ -25,7 +27,7 @@ $(document).ready(function(){
         offset: '50%'
     });
     
-    $('.js--wp--2').waypoint(function(direction) {
+    $('.js--wp--2').waypoint(function (direction) {
         $('.js--line-2').addClass("animated rollIn");
         $('.js--h-2').addClass("animated zoomIn");
         $('.js--trending').addClass("animated fadeIn");
@@ -33,21 +35,21 @@ $(document).ready(function(){
         offset: '50%'
     });
     
-    $('.js--wp--3').waypoint(function(direction) {
+    $('.js--wp--3').waypoint(function (direction) {
         $('.js--line-3').addClass("animated rollIn");
         $('.js--h-3').addClass("animated zoomIn");
     }, {
         offset: '50%'
     });
     
-    $('.js--wp--4').waypoint(function(direction) {
+    $('.js--wp--4').waypoint(function (direction) {
         $('.js--left').addClass("animated slideInLeft");
         $('.js--right').addClass("animated slideInRight");
     }, {
         offset: '50%'
     });
     
-    $('.js--wp--5').waypoint(function(direction) {
+    $('.js--wp--5').waypoint(function (direction) {
         $('.js--letter-left').addClass("animated slideInLeft");
         $('.js--letter-right').addClass("animated slideInRight");
         $('.js--heart').addClass("animated flash");
@@ -56,13 +58,12 @@ $(document).ready(function(){
     });
     
     
-//  ======  mobele navigation section============//
+//    mobele navigation section   //
     
-        $('.js--nav-icon').click(function() {
+        $('.js--nav-icon').click(function () {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
-        
-        nav.slideToggle(400);
+        nav.animate({width:'toggle'},500);
         
         if (icon.hasClass('ion-ios-more')) {
             icon.addClass('ion-close-circled');
