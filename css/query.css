@@ -14,7 +14,7 @@
     .main-nav{display: none}
     .logo{
         margin-left: 40%;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     .main-nav{
         margin-top: 40px;
@@ -32,6 +32,7 @@
     }
     .subscribe{margin-top: 90px}
     .item-right{padding-left: 15px}
+    .inner-text{font-size: 200%;}
 }
 
 /*     ============== FOR LARG iPHONE =============*/
