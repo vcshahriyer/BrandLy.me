@@ -1,3 +1,13 @@
+/*     ============== FOR iPAD AND TABLET =============*/
+
+@media only screen and (max-width: 1024px){
+    nav .logo{margin-left: 0}
+    .subscribe{margin-left: 10px}
+    .subscribe{margin-left: 10px}
+    #subBtn{margin-left: 80px}
+}
+
+/*     ============== FOR LARG SCREEN PHONE =============*/
 
 @media only screen and (max-width: 768px){
     .row{padding: 0px 20px}
@@ -24,6 +34,19 @@
     .item-right{padding-left: 15px}
 }
 
+/*     ============== FOR LARG iPHONE =============*/
+
+
+@media only screen and (max-width: 640px){
+    .logo{width: 170px;margin-left: 100px;margin-top: 10px}
+    .inner-text{font-size: 145%;}
+    .subscribe{margin-top: 30px;}
+    .subscribe h3{text-align: left}
+    .btn-shop{font-size: 107%}
+}
+
+/*     ============== FOR SMALL ANDROID PHONE =============*/
+
 @media only screen and (max-width: 480px){
     .logo{margin: 0}
     .mobile-nav-icon{margin-top: 20px;}
@@ -32,14 +55,13 @@
     .subscribe h3{text-align: center;line-height: 1.5}
 }
 
+
+/*     ============== FOR VERY SMALL ANDROID PHONE =============*/
+
+
 @media only screen and (max-width: 320px){
     .heroin-text p {display: none}
-    .heroin-text h1{
-        margin-bottom: 30px;
-        font-size: 150%;
-        padding: 0.2%;
-        margin-top: 35%;
-    }
+    .heroin-text h1{margin-bottom: 20px}
     .logo{width: 170px}
     .inner-text{font-size: 135%;}
     .subscribe{margin-top: 30px;}

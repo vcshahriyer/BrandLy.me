@@ -112,13 +112,17 @@ header{
     display: inline-block;
 }
 .heroin-text p {
-    font-size:150%;
+    font-size:140%;
     margin: 20px 0px;
 }
 .heroin-text{
     color: #fff;
     text-align: center;
-    margin-top: 12%
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .heroin-text h1{
     font-size: 250%;
@@ -135,7 +139,7 @@ header{
 }
 .dot{
     position: absolute;
-    top: 97%;
+    top: 90%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
