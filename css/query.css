@@ -3,7 +3,6 @@
 @media only screen and (max-width: 1024px){
     nav .logo{margin-left: 0}
     .subscribe{margin-left: 10px}
-    .subscribe{margin-left: 10px}
     #subBtn{margin-left: 80px}
 }
 
@@ -34,7 +33,6 @@
         margin-left: 10px !important;
         margin-top: 10px;
     }
-    .subscribe{margin-top: 90px}
     .item-right{padding-left: 15px}
     .inner-text{font-size: 200%;}
 }
@@ -45,8 +43,6 @@
 @media only screen and (max-width: 640px){
     .logo{width: 170px;margin-left: 100px;margin-top: 10px}
     .inner-text{font-size: 145%;}
-    .subscribe{margin-top: 30px;}
-    .subscribe h3{text-align: left}
     .btn-shop{font-size: 107%}
 }
 
@@ -56,8 +52,7 @@
     .logo{margin: 0}
     .mobile-nav-icon{margin-top: 20px;}
     .col{margin-bottom: 10px}
-    .subscribe{margin-top: 65px;}
-    .subscribe h3{text-align: center;line-height: 1.5}
+    .subscribe h3{line-height: 1.5}
 }
 
 
@@ -65,11 +60,20 @@
 
 
 @media only screen and (max-width: 320px){
-    .heroin-text p {display: none}
-    .heroin-text h1{margin-bottom: 20px}
+    .heroin-text h3{font-size: 18px}
+    .heroin-text h1{font-size: 25px}
     .logo{width: 170px}
-    .inner-text{font-size: 135%;}
-    .subscribe{margin-top: 30px;}
-    .subscribe h3{text-align: left}
+    .inner-text{font-size: 140%;}
     .btn-shop{font-size: 107%}
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .heroin-text h3{font-size: 18px}
+    .heroin-text h1{font-size: 25px}
+    .main-nav li{margin-bottom: 5px}
+    .inner-text{font-size: 130%;margin: 15%}
+    .logo{height: 60px;margin: 0}
+    .mobile-nav-icon{margin-top: 15px;}
+
 }

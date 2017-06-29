@@ -34,9 +34,12 @@ a{
     position: fixed;
 }
 #svg-img{
-    width: 50%;
-    margin: 200px auto;
     display: none;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 svg{
     width: 100%;
@@ -112,10 +115,6 @@ header{
     max-width: 230px;
     display: inline-block;
 }
-.heroin-text p {
-    font-size:140%;
-    margin: 20px 0px;
-}
 .heroin-text{
     color: #fff;
     text-align: center;
@@ -125,13 +124,16 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.heroin-text h1{
-    font-size: 250%;
-}
-#btn-sn{margin-bottom: 40px}                  /* read   #dc0000  */
+.heroin-text h3{padding: 2%;font-size: 20px}
+.heroin-text h1{font-size: 50px}
+/* read   #dc0000  */
+
 .btn{ 
     border:1px solid;
-    padding: 5px 9px;
+    padding: 1% 1%;
+    display: inline-block;
+/*    margin-top: 10%;*/
+    font-size: 110%
 }
 .btn:hover{
     background: #fff;
@@ -298,17 +300,18 @@ h2{
 }
 
 .sizebtn{
-    margin: 30px 0;
+    margin: 4% 0;
 }
 .btn-size,
 .btn-shop{
+    display: inline-block;
     border: 1px solid #000;
-    padding: 5px 9px;
+    padding: 2% 2%;
     color: #545454;
     margin-right: 10px;
     font-family: 'Open Sans';
 }
-
+.btn-shop{margin-top: 2px}
 .blog .btn-shop{
     display: inline-block;
     margin: 20px 0 !important;
@@ -346,9 +349,9 @@ h2{
 }
 .subscribe{
     display: inline-block;
-    margin-top: 125px;
+    margin-top: 10%;
 }
-.subscribe h3{font-weight: 300}
+.subscribe h3{font-weight: 300;text-align: left}
 .sub-btn{
     display: inline-block;
     margin-left: 150px;
