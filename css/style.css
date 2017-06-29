@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+body{
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
 .clearfix{
     content: '';
     clear: both;
