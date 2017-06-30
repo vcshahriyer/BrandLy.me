@@ -18,10 +18,10 @@ $(document).ready(function () {
         $('.js--h-1').addClass("animated zoomIn");
         $('.js--latest-products').addClass("animated fadeIn");
         if (direction == 'down'){
-                $('nav').addClass("sticky");
+                $('nav').addClass("on");
         }
         else{
-                $('nav').removeClass("sticky");
+                $('nav').removeClass("on");
         }
     }, {
         offset: '50%'

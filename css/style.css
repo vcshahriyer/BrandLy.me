@@ -91,16 +91,20 @@ nav{background-color: rgba(0, 0, 0, 0.29)}
 }
 .mobile-nav a{font-weight: 400 !important}
 .sticky{
-    width: 100%;
-    background-color: #000;
-    padding-bottom: 10px;
     position: fixed;
+    width: 100%;
     z-index: 199;
     -webkit-animation-delay: .1s;
     animation-delay: .1s;
-    transition: padding .3s ease;
+    transition: all .6s ease;
     top: 0;
 }
+.on{
+    background-color: #000;
+    padding-bottom: 7px;
+    transition: all .6s ease;
+}
+
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/heading-bg.jpg);
     background-position: center;
